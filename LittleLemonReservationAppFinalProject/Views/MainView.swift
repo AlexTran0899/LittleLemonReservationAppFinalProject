@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  LittleLemonReservationAppFinalProject
 //
 //  Created by Alex Tran on 8/8/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-  @StateObject var model = ContentModel()
+  @EnvironmentObject var model:ContentModel
   @State var tabSelection = 0
   
   var body: some View {
@@ -25,5 +25,6 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     MainView()
+      .environmentObject(ContentModel())
   }
 }

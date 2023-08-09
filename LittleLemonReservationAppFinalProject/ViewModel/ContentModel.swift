@@ -30,7 +30,7 @@ class ContentModel:ObservableObject {
   ]
   
   @Published var reservation = Reservation()
-  @Published var displayingReservationForm = false
+  @Published var displayingReservationForm = true
   @Published var temporaryReservation = Reservation()
   @Published var followNavitationLink = false
   

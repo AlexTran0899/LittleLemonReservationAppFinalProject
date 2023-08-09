@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct RestaurantLocation:Hashable {
+struct RestaurantLocation:Hashable,Identifiable {
+  var id = UUID()
   let city:String
   let neighborhood:String
   let phoneNumber:String

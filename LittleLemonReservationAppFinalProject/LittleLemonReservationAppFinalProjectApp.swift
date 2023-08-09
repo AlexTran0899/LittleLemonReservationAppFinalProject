@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct LittleLemonReservationAppFinalProjectApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      MainView()
+        .environmentObject(ContentModel())
     }
+  }
 }
