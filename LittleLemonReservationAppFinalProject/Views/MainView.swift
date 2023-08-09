@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
-  @StateObject var model = Model()
+struct MainView: View {
+  @StateObject var model = ContentModel()
   @State var tabSelection = 0
   
   var body: some View {
@@ -24,6 +24,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    MainView()
   }
 }
