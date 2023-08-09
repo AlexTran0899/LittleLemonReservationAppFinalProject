@@ -11,23 +11,27 @@ struct LocationView: View {
   @EnvironmentObject var model:ContentModel
   
   var body: some View {
-    VStack {
-      LittleLemonLogo()
-        .padding(.top, 50)
-      
-      if model.displayingReservationForm {
-        Text("Reservation Details")
-          .padding([.leading, .trailing], 40)
-          .padding([.top, .bottom], 8)
-          .background(Color.gray.opacity(0.2))
-          .cornerRadius(20)
-      }
-      
-      NavigationView {
+    NavigationView {
+      VStack(spacing: 20) {
+        LittleLemonLogo()
+          .padding(.top, 50)
+        if model.displayingReservationForm {
+          Button {
+            print(model.reservation)
+          } label: {
+            Text("Reservation Details")
+              .padding([.leading, .trailing], 40)
+              .padding([.top, .bottom], 8)
+              .background(Color.gray.opacity(0.2))
+              .cornerRadius(20)
+          }
+          
+        }
+        
         List {
           ForEach(model.restaurants) {restaurant in
             NavigationLink {
-              EmptyView()
+              ReservationForm(restaurant: restaurant, reservation: $model.reservation)
             } label: {
               VStack(alignment: .leading) {
                 Text(restaurant.city)
@@ -41,14 +45,12 @@ struct LocationView: View {
               }
             }
           }
-        }
-        .listStyle(.inset)
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        
+        }  .listStyle(.inset)
+          .navigationBarTitle("")
+          .navigationBarHidden(true)
       }
+      .padding()
     }
-    .padding()
   }
 }
 

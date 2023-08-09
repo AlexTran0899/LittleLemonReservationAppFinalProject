@@ -18,7 +18,13 @@ struct MainView: View {
         .tabItem {
           Label("location",systemImage: "fork.knife")
         }
+      Color.blue
+        .tag(1)
+        .tabItem {
+          Label("trash",systemImage: "trash")
+        }
     }
+    .edgesIgnoringSafeArea(.all)
   }
 }
 

@@ -8,6 +8,7 @@
 import Foundation
 
 struct Reservation {
+  var id = UUID()
   var restaurant:RestaurantLocation
   var customerName:String
   var customerEmail:String
@@ -15,7 +16,6 @@ struct Reservation {
   var reservationDate:Date
   var party:Int
   var specialRequests:String
-  var id = UUID()
   
   init(restaurant:RestaurantLocation = RestaurantLocation(),
        customerName: String = "",
@@ -32,5 +32,4 @@ struct Reservation {
     self.party = party
     self.specialRequests = specialRequests
   }
-  
 }

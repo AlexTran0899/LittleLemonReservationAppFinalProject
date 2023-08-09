@@ -16,6 +16,7 @@
 		7F6C787A2A832EFE00F9BF46 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C78792A832EFE00F9BF46 /* ContentModel.swift */; };
 		7F6C787C2A832FFA00F9BF46 /* RestaurantLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C787B2A832FFA00F9BF46 /* RestaurantLocation.swift */; };
 		7F6C78812A83307600F9BF46 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C78802A83307600F9BF46 /* Reservation.swift */; };
+		7F6C78832A83E3F700F9BF46 /* ReservationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C78822A83E3F700F9BF46 /* ReservationForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		7F6C78792A832EFE00F9BF46 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		7F6C787B2A832FFA00F9BF46 /* RestaurantLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLocation.swift; sourceTree = "<group>"; };
 		7F6C78802A83307600F9BF46 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		7F6C78822A83E3F700F9BF46 /* ReservationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				7F6C784D2A832AF100F9BF46 /* MainView.swift */,
 				7F6C78772A832E3200F9BF46 /* LocationView.swift */,
 				7F6C78752A832E0100F9BF46 /* LittleLemonLogo.swift */,
+				7F6C78822A83E3F700F9BF46 /* ReservationForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				7F6C78762A832E0100F9BF46 /* LittleLemonLogo.swift in Sources */,
 				7F6C784C2A832AF100F9BF46 /* LittleLemonReservationAppFinalProjectApp.swift in Sources */,
 				7F6C78812A83307600F9BF46 /* Reservation.swift in Sources */,
+				7F6C78832A83E3F700F9BF46 /* ReservationForm.swift in Sources */,
 				7F6C787C2A832FFA00F9BF46 /* RestaurantLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
